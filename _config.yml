@@ -2,27 +2,26 @@
 #
 
 # Site settings
-title: Spectral
+title: Tyrone Anthony
 description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+  Photographer<br />
+  Based in Malaysia
+owner: Tyrone Ong # or company name
+first_published: 2017 # if migrating another site, the year of your first publish
+email: ongtypc@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
+  twitter: https://twitter.com/tyrone0ng
+  #github: https://github.com/<username>
+  #linkedin-square: https://linkedin.com/in/<username>
+  facebook-official: https://facebook.com/tyroneanthonyphoto/
+  #google-plus-square: https://plus.google.com/u/0/+<username>
   #email: /contact/
   #flickr:
-  #instagram:
+  instagram: https://instagram.com/tyrone0ng/
   #youtube-square:
-  #spotify:
+  spotify: https://open.spotify.com/user/1277814824
   #stack-overflow:
   #vimeo:
   #reddit:
