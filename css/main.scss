@@ -8,7 +8,8 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'font-awesome.min.css';
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import 'custom-font.css';
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
 /*
 	Spectral by HTML5 UP
@@ -264,9 +265,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		@include breakpoint(medium) {
-			br {
-				display: none;
-			}
+//			br {
+//				display: none;
+//			}
 		}
 	}
 
@@ -305,7 +306,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&:focus {
-			box-shadow: 0 0 0 2px _palette(accent1, bg);
+			box-shadow: 0 0 0 2px _palette(accent8, bg);
 		}
 	}
 
@@ -390,7 +391,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		&:focus + label {
 			&:before {
-				box-shadow: 0 0 0 2px _palette(accent1, bg);
+				box-shadow: 0 0 0 2px _palette(accent8, bg);
 			}
 		}
 	}
@@ -471,7 +472,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		&.major {
 			@include vendor('transform', 'rotate(-45deg)');
 			border-radius: 3px;
-			border: solid 2px _palette(border);
+			border: solid 2px _palette(border-bg);
 			display: inline-block;
 			font-size: 1.35em;
 			height: calc(3em + 2px);
@@ -491,15 +492,27 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style1 {
-			color: _palette(accent2, bg);
+			color: _palette(border-bg);
 		}
 
 		&.style2 {
-			color: _palette(accent3, bg);
+			color: _palette(border-bg);
 		}
 
 		&.style3 {
-			color: _palette(accent4, bg);
+			color: _palette(border-bg);
+		}
+        
+        &.style1:hover {
+			color: _palette(border);
+		}
+        
+        &.style2:hover {
+			color: _palette(border);
+		}
+        
+        &.style3:hover {
+			color: _palette(border);
 		}
 	}
 
@@ -858,16 +871,16 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.special {
-			background-color: _palette(accent6, bg);
+			background-color: _palette(fg-light);
 			box-shadow: none !important;
-			color: _palette(accent6, fg-bold) !important;
+			color: _palette(accent5, fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accent6, bg), 5) !important;
+				background-color: _palette(bg) !important;
 			}
 
 			&:active {
-				background-color: darken(_palette(accent6, bg), 5) !important;
+				background-color: darken(_palette(fg-light), 5) !important;
 			}
 		}
 
@@ -986,13 +999,13 @@ $baseurl: '{{ site.baseurl }}/images';
 			@include vendor('flex-direction', 'row-reverse');
 		}
 
-		@for $i from 1 through _misc(max-spotlights) {
-			$j: 0.075 * $i;
-
-			&:nth-child(#{$i}) {
-				background-color: rgba(0,0,0, $j);
-			}
-		}
+//		@for $i from 1 through _misc(max-spotlights) {
+//			$j: 0.075 * $i;
+//
+//			&:nth-child(#{$i}) {
+//				background-color: rgba(0,0,0, $j);
+//			}
+//		}
 
 		@include breakpoint(large) {
 			.image {
@@ -1138,6 +1151,9 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			.icon {
 				&.major {
+					border-color: _palette($p, border-bg);
+				}
+                &.major:hover {
 					border-color: _palette($p, border);
 				}
 			}
@@ -1240,7 +1256,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style1 {
-			@include wrapper(accent1);
+			@include wrapper(accent8);
 		}
 
 		&.style2 {
@@ -1293,8 +1309,8 @@ $baseurl: '{{ site.baseurl }}/images';
 		@include vendor('transform', 'translateX(20em)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
 		-webkit-overflow-scrolling: touch;
-		background: _palette(accent1, bg);
-		color: _palette(accent1, fg-bold);
+		background: _palette(accent8, bg);
+		color: _palette(accent8, fg-bold);
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -1310,7 +1326,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			padding: 0;
 
 			> li {
-				border-top: solid 1px _palette(accent1, border);
+				border-top: solid 1px _palette(accent8, border);
 				margin: 0.5em 0 0 0;
 				padding: 0.5em 0 0 0;
 
@@ -1591,9 +1607,9 @@ $baseurl: '{{ site.baseurl }}/images';
 				font-size: 1.25em;
 			}
 
-			br {
-				display: none;
-			}
+//			br {
+//				display: none;
+//			}
 
 			.more {
 				display: none;

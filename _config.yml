@@ -1,28 +1,59 @@
 # Welcome to Jekyll!
 #
 
-# Site settings
-title: Spectral
+#------------------Site Settings------------------
+title: Tyrone Anthony
 description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+  Photographer<br>
+  Documenting timeframes
+owner: Tyrone Ong # or company name
+first_published: 2017 # if migrating another site, the year of your first publish
+email: ongtypc@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
+
+
+#------------------Content------------------
+#'banner'
+mainbutton: Contact Me
+scrollbutton: Learn More
+
+#Wrapper 'one'
+header: |
+  Freelance event photographer based in Malaysia<br>
+  Shoot weddings, graduations, etc.
+subheader: |
+  Also shoot lifestyle photos, portraits, and streets as a hobby<br>
+  sometimes blog, and curate music
+
+#Wrapper 'two'
+spotlight1: |
+  The documentary approach
+spotlight1para: |
+  test
+spotlight2: |
+  The documentary approach
+spotlight2para: |
+  test
+spotlight3: |
+  The documentary approach
+spotlight3para: |
+  test
+
+
+#------------------Others------------------
+
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
+  twitter: https://twitter.com/tyrone0ng
+  #github: https://github.com/<username>
+  #linkedin-square: https://linkedin.com/in/<username>
+  facebook-official: https://facebook.com/tyroneanthonyphoto/
+  #google-plus-square: https://plus.google.com/u/0/+<username>
   #email: /contact/
   #flickr:
-  #instagram:
+  instagram: https://instagram.com/tyrone0ng/
   #youtube-square:
-  #spotify:
+  spotify: https://open.spotify.com/user/1277814824
   #stack-overflow:
   #vimeo:
   #reddit:
