@@ -7,20 +7,18 @@ layout: landing
 							<h2>{{ site.title }}</h2>
 							<p>{{ site.description | markdownify }}</p>
 							<ul class="actions">
-								<li><a href="#" class="button special">Reserve Now</a></li>
+								<li><a href="#" class="button special">{{ site.mainbutton }}</a></li>
 							</ul>
 						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
+						<a href="#one" class="more scrolly">{{ site.scrollbutton }}</a>
 					</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>I am a freelance event photographer<br />
-				                Shoot weddings, graduations, and any event (you name it!).</h2>
-								<p>I also shoot lifestyle, portrait, and street photography as a hobby<br />
-								and sometimes blog, and curate music too!</p>
+								<h2>{{ site.header }}</h2>
+								<p>{{ site.subheader }}</p>
 							</header>
 							<ul class="icons major">
 								<li><a href="" style="border-bottom: 0"><span class="icon fa-camera-retro major style1"><span class="label">Photography</span></span></a></li>
@@ -34,23 +32,20 @@ layout: landing
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{ site.spotlight1 }}</h2>
+								<p>{{ site.spotlight1para }}</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{ site.spotlight2 }}</h2>
+								<p>{{ site.spotlight2para }}</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{ site.spotlight3 }}</h2>
+								<p>{{ site.spotlight3para }}</p>
 							</div>
 						</section>
 					</section>

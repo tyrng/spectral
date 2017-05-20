@@ -1,16 +1,48 @@
 # Welcome to Jekyll!
 #
 
-# Site settings
+#------------------Site Settings------------------
 title: Tyrone Anthony
 description: |
-  Photographer<br />
-  Based in Malaysia
+  Photographer<br>
+  Documenting timeframes
 owner: Tyrone Ong # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
 email: ongtypc@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
+
+
+#------------------Content------------------
+#'banner'
+mainbutton: Contact Me
+scrollbutton: Learn More
+
+#Wrapper 'one'
+header: |
+  Freelance event photographer based in Malaysia<br>
+  Shoot weddings, graduations, etc.
+subheader: |
+  Also shoot lifestyle photos, portraits, and streets as a hobby<br>
+  sometimes blog, and curate music
+
+#Wrapper 'two'
+spotlight1: |
+  The documentary approach
+spotlight1para: |
+  test
+spotlight2: |
+  The documentary approach
+spotlight2para: |
+  test
+spotlight3: |
+  The documentary approach
+spotlight3para: |
+  test
+
+
+#------------------Others------------------
+
 social:
   twitter: https://twitter.com/tyrone0ng
   #github: https://github.com/<username>
