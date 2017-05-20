@@ -15,36 +15,48 @@ url: "" # the base hostname & protocol for your site
 
 #------------------Content------------------
 #'banner'
-mainbutton: Contact Me
+mainbutton: Portfolio
 scrollbutton: Learn More
 
 #Wrapper 'one'
 header: |
-  Freelance event photographer based in Malaysia<br>
-  Shoot weddings, graduations, etc.
+  Freelance event photographer<br>based in Malaysia
 subheader: |
-  Also shoot lifestyle photos, portraits, and streets as a hobby<br>
-  sometimes blog, and curate music
+  I shoot weddings, graduations, and all other sorts of events. 
 
 #Wrapper 'two'
 spotlight1: |
-  The documentary approach
+  The timeframes
 spotlight1para: |
-  test
+  I believe in a life of timeframes. I believe things change, and people come and go; different timeframes, different places, different people. <br><br>
+  I also believe in making records. I believe that one should not feel regretful for having no record of the important moments. 
 spotlight2: |
   The documentary approach
 spotlight2para: |
-  test
+  For making a record, I strive for genuine moments. <br><br>
+  Enter the documentary approach. I strive to capture the true reflection and emotions of the events. I believe a good photograph captures the souls. 
 spotlight3: |
-  The documentary approach
+  Timeless looking albums
 spotlight3para: |
-  test
+  A classic photo album is like a music mixtape - something that is created to be enjoyed for decades and on. I also strive to capture classic looking photographs, something that we would still enjoy when we grow old, perhaps for your grandchildren too. <br><br>
+  It's true, the classics never get old. 
+
+#Wrapper 'three'
+
+
+#Wrapper 'cta'
+cta-header: |
+  Learn more
+cta-para: |
+  More questions? No problem. Call me or text me. 
+cta-button: Contact Me
+cta-button2: Portfolio
 
 
 #------------------Others------------------
 
 social:
-  twitter: https://twitter.com/tyrone0ng
+  #twitter: https://twitter.com/tyrone0ng
   #github: https://github.com/<username>
   #linkedin-square: https://linkedin.com/in/<username>
   facebook-official: https://facebook.com/tyroneanthonyphoto/
