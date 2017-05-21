@@ -7,7 +7,7 @@ layout: landing
 							<h2>{{ site.title }}</h2>
 							<p>{{ site.description | markdownify }}</p>
 							<ul class="actions">
-								<li><a href="#" class="button special">{{ site.mainbutton }}</a></li>
+								<li><a href="{{ site.mainbuttonlink }}" class="button special">{{ site.mainbutton }}</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">{{ site.scrollbutton }}</a>
@@ -31,19 +31,19 @@ layout: landing
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/spotlight01.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="{{ site.spotlight1img }}" alt="" /></div><div class="content">
 								<h2>{{ site.spotlight1 }}</h2>
 								<p>{{ site.spotlight1para }}</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/spotlight02.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="{{ site.spotlight2img }}" alt="" /></div><div class="content">
 								<h2>{{ site.spotlight2 }}</h2>
 								<p>{{ site.spotlight2para }}</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/spotlight03.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="{{ site.spotlight3img }}" alt="" /></div><div class="content">
 								<h2>{{ site.spotlight3 }}</h2>
 								<p>{{ site.spotlight3para }}</p>
 							</div>
@@ -95,8 +95,8 @@ layout: landing
 								<p>{{ site.cta-para }}</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#" class="button fit">{{ site.cta-button }}</a></li>
-								<li><a href="#" class="button fit special">{{ site.cta-button2 }}</a></li>
+								<li><a href="{{ site.cta-buttonlink }}" class="button fit">{{ site.cta-button }}</a></li>
+								<li><a href="{{ site.cta-button2link }}" class="button fit special">{{ site.cta-button2 }}</a></li>
 							</ul>
 						</div>
 					</section>
