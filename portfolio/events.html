@@ -1,0 +1,32 @@
+---
+layout: page
+title: Events
+tags: events
+description: s
+---
+<div class="box alt">
+    <div class="row uniform 50%">
+{% for category in site.categories %}
+{% if category contains 'portfolio' %}
+    {% for posts in category %}
+        {% for post in posts %}
+            {% if post.url and post.categories.last contains 'events' %}
+            
+				
+				    				    <div class="6u" id="gallery" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+                        <div class="image fit container">
+                            <img src="../../assets/img/portfolio-thumb/{{ post.imagename }}.jpg" alt="" /><h4>{{ post.title }}</h4>
+                            <a href="{{ post.url }}" class="overlay">
+                                <div class="text">View Album</div>
+                            </a>
+                        </div>
+                    </div>
+                
+            
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+{% endfor %}
+    </div>
+</div>

@@ -13,7 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 permalink: /:categories/:title/
 
-#------------------Content------------------
+#------------------Index Content------------------
 #'banner'
 mainbutton: Portfolio
 mainbuttonlink: portfolio
@@ -54,9 +54,31 @@ cta-header: |
 cta-para: |
   More questions? No problem. Call me or text me. 
 cta-button: Contact Me
-cta-buttonlink: contact
+cta-buttonlink: about#contact
 cta-button2: Portfolio
 cta-button2link: portfolio
+
+#------------------Page Content------------------
+#Portfolio
+pspotlight1: |
+  The timeframes
+pspotlight1para: |
+  I believe in a life of timeframes. I believe things change, and people come and go; different timeframes, different places, different people. <br><br>
+  I also believe in making records. I believe that one should not feel regretful for having no record of the important moments. 
+pspotlight1img: ../assets/img/site/spotlight01.jpg
+pspotlight2: |
+  The documentary approach
+pspotlight2para: |
+  For making a record, I strive for genuine moments. <br><br>
+  Enter the documentary approach. I strive to capture the true reflection and emotions of an event. I believe a good photograph captures the souls. 
+pspotlight2img: ../assets/img/site/spotlight02.jpg
+pspotlight3: |
+  Timeless photographs
+pspotlight3para: |
+  A classic photo album is like a music mixtape - something that is created to be enjoyed for decades and on. I also strive to capture classic looking photographs, something that we would still enjoy when we grow old, perhaps for your grandchildren too. <br><br>
+  It's true, the classics never get old. 
+pspotlight3img: ../assets/img/site/spotlight03.jpg
+
 
 
 #------------------Others------------------

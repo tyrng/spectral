@@ -1,24 +1,56 @@
 ---
-layout: page
+layout: default
 title: Portfolio
 description: s
 ---
-<div class="box alt">
-    <div class="row uniform 50%">
-{% for category in site.categories %}
-{% if category contains 'portfolio' %}
-    {% for posts in category %}
-        {% for post in posts %}
-            {% if post.url %}
-            
-				
-				    <div class="6u" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%"><span class="image fit"><a href="{{ post.url }}"><img src="../assets/img/portfolio-thumb/{{ post.thumb }}.jpg" alt="" />{{ post.title }}</a></span></div>
-                
-            
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
-{% endif %}
-{% endfor %}
+<article id="main">
+
+  <header>
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+  </header>
+
+  <section style="width: 100%; padding: 2em 0 4em 0" class="wrapper style5">
+    <div style="width: 100%;">
+      <section style="width: 100%;" id="two" class="wrapper alt style2">
+    <section style="background-color: white" class="spotlight">
+        <span style="border-bottom: 0" class="image"><img src="{{ site.pspotlight1img }}" alt="" /></span>
+        <span style="border-bottom: 0; background-color: white" class="content">
+            <h2>{{ site.pspotlight1 }}</h2>
+            <p>{{ site.pspotlight1para }}</p>
+            <div style="text-align: center">
+						<ul class="actions">
+							<li><a href="/portfolio/marriage/index.html" class="button">VIEW PORTFOLIO</a></li>
+						</ul>
+            </div>
+        </span>
+    </section>
+    <section style="background-color: white" class="spotlight">
+        <span style="border-bottom: 0" class="image"><img src="{{ site.pspotlight2img }}" alt="" /></span>
+        <span style="border-bottom: 0; background-color: white" class="content">
+            <h2>{{ site.pspotlight2 }}</h2>
+            <p>{{ site.pspotlight2para }}</p>
+            <div style="text-align: center">
+						<ul class="actions">
+							<li><a href="/portfolio/graduations/index.html" class="button">VIEW PORTFOLIO</a></li>
+						</ul>
+            </div>
+        </span>
+    </section>
+    <section style="background-color: white" class="spotlight">
+        <span style="border-bottom: 0" class="image"><img src="{{ site.pspotlight3img }}" alt="" /></span>
+        <span style="border-bottom: 0; background-color: white" class="content">
+            <h2>{{ site.pspotlight3 }}</h2>
+            <p>{{ site.pspotlight3para }}</p>
+            <div style="text-align: center">
+						<ul class="actions">
+							<li><a href="/portfolio/events/index.html" class="button">VIEW PORTFOLIO</a></li>
+						</ul>
+            </div>
+        </span>
+    </section>
+</section>
     </div>
-</div>
+  </section>
+
+</article>
