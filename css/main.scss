@@ -1912,6 +1912,11 @@ $baseurl: '{{ site.baseurl }}/assets/img';
     #gallery {
         width: 100%;
     }
+    
+    ul.actions li a {
+        max-width: 20em;
+    }
+    
 }
 
 // Image Overlay
