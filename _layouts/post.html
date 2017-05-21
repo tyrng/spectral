@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article id="main">
+
+  <header>
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+  </header>
+
+  <section class="wrapper style5">
+    <div class="inner">
+      {{ content }}
+      {% if page.categories contains 'portfolio' %}
+        <div class="box alt">
+            <div class="row uniform 50%">
+                {% for image in site.static_files %}
+                {% if image.path contains 'assets/img/portfolio/' %}
+                {% capture img %}
+                {{ image.basename }}
+                {% endcapture %}
+                {% capture adjustedimg %}
+                {{ img | truncatewords: 1, "" }}
+                {% endcapture %}
+                    {% if adjustedimg contains page.imagename %}
+				        <div class="12u"><span class="image fit"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></span></div>
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
+</article>
