@@ -1,0 +1,43 @@
+---
+layout: page
+title: Blog
+description: s
+---
+<section>
+				<div class="table-wrapper">
+					<table>
+						<thead>
+							<tr style="text-transform: uppercase">
+								<th>Date</th>
+								<th>Title</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+						<tbody>
+                            {% for category in site.categories %}
+                            {% if category contains 'blog' %}
+                            {% for posts in category %}
+                            {% for post in posts %}
+                            {% if post.url %}
+							<tr>
+								<td>{{ post.date | date_to_long_string }}</td>
+								<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+								<td>{{ post.excerpt }}</td>
+							</tr>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            {% endif %}
+                            {% endfor %}
+						</tbody>
+<!--
+						<tfoot>
+							<tr>
+								<td colspan="2"></td>
+								<td>100.00</td>
+							</tr>
+						</tfoot>
+-->
+					</table>
+				</div>
+</section>

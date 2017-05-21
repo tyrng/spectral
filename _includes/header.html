@@ -44,6 +44,10 @@
                         {% endif %} {% endfor %}
                         
                         
+                        {% for my_page in site.pages %} {% if my_page.title contains 'Blog' %}
+                        <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a></li>
+                        {% endif %} {% endfor %}
+                        
                         {% for my_page in site.pages %} {% if my_page.title contains 'About Me' %}
                         <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a></li>
                         {% endif %} {% endfor %}

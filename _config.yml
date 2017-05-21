@@ -6,6 +6,7 @@ title: Tyrone Anthony
 description: |
   Photographer<br>
   Documenting timeframes
+rssdescription: Photographer
 owner: Tyrone Ong # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
 email: ongtypc@gmail.com
@@ -24,6 +25,12 @@ header: |
   Freelance event photographer<br>based in Malaysia
 subheader: |
   I shoot weddings, graduations, and all other sorts of events. 
+icon1link: portfolio/
+icon1label: Photographing
+icon2link: blog/
+icon2label: Blogging
+icon3link: https://open.spotify.com/user/1277814824
+icon3label: Music Curating
 
 #Wrapper 'two'
 spotlight1: |
@@ -79,7 +86,13 @@ pspotlight3para: |
   Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. 
 pspotlight3img: ../assets/img/site/spotlight03.jpg
 
-
+#About Me
+aboutpic01: ../assets/img/elements/pic04.jpg
+aboutpara01: |
+  Puppy kitty ipsum dolor sit good dog window kisses fleas bark running vitamins commands fido heel fur foot food. Throw water dog finch licks dog birds running Tigger feathers crate bed slobber chow nap chirp tooth. Chirp dinnertime tongue kitten Fido gimme five feeder kisses whiskers Buddy cockatiel Fido bark aquatic tuxedo Fido brush furry dragging. Window tail cage heel lazy dog parakeet hamster ball speak food polydactyl litter bird seed water dog chew Buddy tongue foot house train. Commands cage dog house pet supplies left paw parakeet water feeder collar heel kibble gimme five tabby lazy dog collar.
+aboutpic02: ../assets/img/elements/pic05.jpg
+aboutpara02: |
+  Puppy kitty ipsum dolor sit good dog . Vaccine wagging purr swimming paws wet nose Snowball good boy. Treats warm pet supplies biscuit hamster cage purr heel wet nose Spike fluffy bed. Fleas speak Scooby snacks feathers purr collar foot gimme five food leash behavior chow maine coon cat Mittens chirp fur ID tag Scooby snacks. Barky puppy grooming Tigger behavior cat puppy aquarium.
 
 #------------------Others------------------
 
