@@ -6,6 +6,7 @@ description: s
 <section>
 				<div class="table-wrapper">
 					<table>
+<!--
 						<thead>
 							<tr style="text-transform: uppercase">
 								<th>Date</th>
@@ -13,16 +14,17 @@ description: s
 								<th>Summary</th>
 							</tr>
 						</thead>
+-->
 						<tbody>
                             {% for category in site.categories %}
                             {% if category contains 'blog' %}
                             {% for posts in category %}
                             {% for post in posts %}
                             {% if post.url %}
-							<tr>
+							<tr style="text-transform: uppercase">
 								<td>{{ post.date | date_to_long_string }}</td>
 								<td><a href="{{ post.url }}">{{ post.title }}</a></td>
-								<td>{{ post.excerpt }}</td>
+<!--								<td>{{ post.excerpt }}</td>-->
 							</tr>
                             {% endif %}
                             {% endfor %}

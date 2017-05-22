@@ -15,7 +15,7 @@ layout: default
         <div class="box alt">
             <div class="row uniform 50%">
                 {% for image in site.static_files %}
-                {% if image.path contains 'assets/img/portfolio/' %}
+                {% if image.path contains 'assets/img/portfolio/posts' %}
                 {% capture img %}
                 {{ image.basename }}
                 {% endcapture %}
