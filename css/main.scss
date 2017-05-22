@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$baseurl: '{{ site.baseurl }}/assets/img';
+$baseurl: '{{ site.baseurl }}/images';
 
 @import 'libs/vars';
 @import 'libs/functions';
@@ -479,6 +479,7 @@ $baseurl: '{{ site.baseurl }}/assets/img';
 			line-height: 3em;
 			text-align: center;
 			width: calc(3em + 2px);
+            transition: color 0.5s ease, border-color 0.5s ease !important;
 
 			&:before {
 				@include vendor('transform', 'rotate(45deg)');
@@ -492,15 +493,15 @@ $baseurl: '{{ site.baseurl }}/assets/img';
 		}
 
 		&.style1 {
-			color: _palette(border-bg);
+			color: _palette(fg-light);
 		}
 
 		&.style2 {
-			color: _palette(border-bg);
+			color: _palette(fg-light);
 		}
 
 		&.style3 {
-			color: _palette(border-bg);
+			color: _palette(fg-light);
 		}
         
         &.style1:hover {
@@ -1151,7 +1152,7 @@ $baseurl: '{{ site.baseurl }}/assets/img';
 
 			.icon {
 				&.major {
-					border-color: _palette($p, border-bg);
+					border-color: _palette($p, fg-light);
 				}
                 &.major:hover {
 					border-color: _palette($p, border);
@@ -1274,6 +1275,11 @@ $baseurl: '{{ site.baseurl }}/assets/img';
 
 		&.style5 {
 			@include wrapper(accent7);
+		}
+        
+        &.style6 {
+			@include wrapper(accent8);
+            background-color: _palette(fg-light) !important;
 		}
 
 		@include breakpoint(medium) {

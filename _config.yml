@@ -25,6 +25,8 @@ header: |
   Freelance event photographer<br>based in Malaysia
 subheader: |
   I shoot weddings, graduations, and all other sorts of events. 
+#subheader2: |
+#  Meanwhile, I shoot other genres of photography as a hobby.<br>I also write and curate music.
 icon1link: portfolio/
 icon1label: Photographing
 icon2link: blog/
@@ -38,19 +40,19 @@ spotlight1: |
 spotlight1para: |
   I believe in a life of timeframes. I believe things change, and people come and go; different timeframes, different places, different people. <br><br>
   I also believe in making records. I believe that one should not feel regretful for having no record of the important moments. 
-spotlight1img: assets/img/site/spotlight01.jpg
+spotlight1img: images/site/spotlight01.jpg
 spotlight2: |
   The documentary approach
 spotlight2para: |
   For making a record, I strive for genuine moments. <br><br>
   Enter the documentary approach. I strive to capture the true reflection and emotions of an event. I believe a good photograph captures the souls. 
-spotlight2img: assets/img/site/spotlight02.jpg
+spotlight2img: images/site/spotlight02.jpg
 spotlight3: |
   Timeless photographs
 spotlight3para: |
   A classic photo album is like a music mixtape - something that is created to be enjoyed for decades and on. I also strive to capture classic looking photographs, something that we would still enjoy when we grow old, perhaps for your grandchildren too. <br><br>
   It's true, the classics never get old. 
-spotlight3img: assets/img/site/spotlight03.jpg
+spotlight3img: images/site/spotlight03.jpg
 
 #Wrapper 'three'
 
@@ -72,25 +74,25 @@ pspotlight1: |
 pspotlight1para: |
   Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. <br><br>
   Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. 
-pspotlight1img: ../assets/img/site/spotlight01.jpg
+pspotlight1img: ../images/site/spotlight01.jpg
 pspotlight2: |
   Graduations
 pspotlight2para: |
   Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. <br><br>
   Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. 
-pspotlight2img: ../assets/img/site/spotlight02.jpg
+pspotlight2img: ../images/site/spotlight02.jpg
 pspotlight3: |
   Events
 pspotlight3para: |
   Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. <br><br>
   Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. 
-pspotlight3img: ../assets/img/site/spotlight03.jpg
+pspotlight3img: ../images/site/spotlight03.jpg
 
 #About Me
-aboutpic01: ../assets/img/elements/pic04.jpg
+aboutpic01: ../images/elements/pic04.jpg
 aboutpara01: |
   Puppy kitty ipsum dolor sit good dog window kisses fleas bark running vitamins commands fido heel fur foot food. Throw water dog finch licks dog birds running Tigger feathers crate bed slobber chow nap chirp tooth. Chirp dinnertime tongue kitten Fido gimme five feeder kisses whiskers Buddy cockatiel Fido bark aquatic tuxedo Fido brush furry dragging. Window tail cage heel lazy dog parakeet hamster ball speak food polydactyl litter bird seed water dog chew Buddy tongue foot house train. Commands cage dog house pet supplies left paw parakeet water feeder collar heel kibble gimme five tabby lazy dog collar.
-aboutpic02: ../assets/img/elements/pic05.jpg
+aboutpic02: ../images/elements/pic05.jpg
 aboutpara02: |
   Puppy kitty ipsum dolor sit good dog . Vaccine wagging purr swimming paws wet nose Snowball good boy. Treats warm pet supplies biscuit hamster cage purr heel wet nose Spike fluffy bed. Fleas speak Scooby snacks feathers purr collar foot gimme five food leash behavior chow maine coon cat Mittens chirp fur ID tag Scooby snacks. Barky puppy grooming Tigger behavior cat puppy aquarium.
 

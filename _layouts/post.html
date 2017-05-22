@@ -15,7 +15,7 @@ layout: default
         <div class="box alt">
             <div class="row uniform 50%">
                 {% for image in site.static_files %}
-                {% if image.path contains 'assets/img/portfolio/posts' %}
+                {% if image.path contains 'images/portfolio/posts' %}
                 {% capture img %}
                 {{ image.basename }}
                 {% endcapture %}
@@ -23,7 +23,7 @@ layout: default
                 {{ img | truncatewords: 1, "" }}
                 {% endcapture %}
                     {% if adjustedimg contains page.imagename %}
-				        <div class="12u"><span class="image fit"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></span></div>
+				        <div class="12u"><span class="image fit"><img src="{{ image.path }}" alt="image" /></span></div>
                     {% endif %}
                 {% endif %}
                 {% endfor %}

@@ -15,7 +15,7 @@ description: s
 				
 				    <div class="6u" id="gallery" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
                         <div class="image fit container">
-                            <img src="../../assets/img/portfolio/thumb/marriage/{{ post.imagename }}.jpg" alt="" /><h4>{{ post.title }}</h4>
+                            <img src="{{ "/images/portfolio/thumb/marriage/" | append: post.imagename | append: ".jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" /><h4>{{ post.title }}</h4>
                             <a href="{{ post.url }}" class="overlay">
                                 <div class="text">View Album</div>
                             </a>
