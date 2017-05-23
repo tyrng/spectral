@@ -2,7 +2,7 @@
 layout: page
 title: Events
 tags: events
-description: s
+description: everything else
 ---
 <div class="box alt">
     <div class="row uniform 50%">
@@ -13,7 +13,7 @@ description: s
             {% if post.url and post.categories.last contains 'events' %}
             
 				
-				    				    <div class="6u" id="gallery" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+				    <div class="6u" id="gallery" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
                         <div class="image fit container">
                             <img src="{{ "/images/portfolio/thumb/events/" | append: post.imagename | append: ".jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" /><h4>{{ post.title }}</h4>
                             <a href="{{ post.url }}" class="overlay">
