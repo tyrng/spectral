@@ -24,7 +24,7 @@ scrollbutton: Learn More
 header: |
   Freelance event photographer<br>based in Malaysia
 subheader: |
-  I shoot weddings, graduations, and all other sorts of events. 
+  I shoot weddings, graduations, and all other sorts of events.
 #subheader2: |
 #  Meanwhile, I shoot other genres of photography as a hobby.<br>I also write and curate music.
 icon1link: portfolio/
@@ -39,19 +39,19 @@ spotlight1: |
   The timeframes
 spotlight1para: |
   I believe in a life of timeframes. I believe things change, and people come and go; different timeframes, different places, different people. <br><br>
-  I also believe in making records. I believe that one should not feel regretful for having no record of the important moments. 
+  I also believe in making records. I believe that one should not feel regretful for having no record of the important moments.
 spotlight1img: images/site/spotlight01.jpg
 spotlight2: |
   The documentary approach
 spotlight2para: |
   For making a record, I strive for genuine moments. <br><br>
-  Enter the documentary approach. I strive to capture the true reflection and emotions of an event. I believe a good photograph captures the souls. 
+  Enter the documentary approach. I strive to capture the true reflection and emotions of an event. I believe a good photograph captures the souls.
 spotlight2img: images/site/spotlight02.jpg
 spotlight3: |
   Timeless photographs
 spotlight3para: |
   A classic photo album is like a music mixtape - something that is created to be enjoyed for decades and on. I also strive to capture classic looking photographs, something that we would still enjoy when we grow old, perhaps for your grandchildren too. <br><br>
-  It's true, the classics never get old. 
+  It's true, the classics never get old.
 spotlight3img: images/site/spotlight03.jpg
 
 #Wrapper 'three'
@@ -61,7 +61,7 @@ spotlight3img: images/site/spotlight03.jpg
 cta-header: |
   Learn more
 cta-para: |
-  More questions? No problem. Just write me a message! 
+  More questions? No problem. Just write me a message!
 cta-button: Contact Me
 cta-buttonlink: about#contact
 cta-button2: Portfolio
@@ -78,12 +78,12 @@ pspotlight2: |
   Graduations
 pspotlight2para: |
   Moment of a lifetime. Gowns and mortarboards, a vision of hope. <br><br><b>Services offered: Personal/Group Portraits, Convocation Event Photography.</b>
-pspotlight2img: ../images/site/spotlight02.jpg
+pspotlight2img: ../images/portfolio/posts/graduations/graduation-victor/graduation-victor 007.jpg
 pspotlight3: |
   Events
 pspotlight3para: |
   From birthday parties to corporate events, or... you name it. <br><br><b>Services offered: Parties, sport events, concerts, fashion walks, corporate events, etc. </b>
-pspotlight3img: ../images/site/spotlight03.jpg
+pspotlight3img: ../images/portfolio/posts/events/event-annualcamp/event-annualcamp 001.jpg
 
 #About Me
 aboutpic01: ../images/site/me1.jpg
