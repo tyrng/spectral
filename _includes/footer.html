@@ -12,6 +12,11 @@
     {% endif %}
     {% endif %}
     {% endfor %}
+    {% if site.sayat %}
+    <li><a target="_blank" href="{{ site.sayat }}" class="icon-fa-sayat"
+      style="text-decoration: none; border-bottom: none; position: relative; top: 1.5px;"
+           ><span class="label"></span></a></li>
+    {% endif %}
   </ul>
   <ul class="copyright">
     <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
