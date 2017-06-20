@@ -37,3 +37,8 @@
     font-family: MyriadPro-SemiboldItalic;
     src: url(../fonts/MyriadPro-SemiboldIt.otf);
 }
+
+@font-face {
+    font-family: MinionPro;
+    src: url(../fonts/MinionPro.ttf);
+}

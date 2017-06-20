@@ -10,8 +10,12 @@ layout: default
 
   <section class="wrapper style5">
     <div class="inner">
-      {{ content }}
-      {% if page.categories contains 'portfolio' %}
+      {% if page.categories contains 'blog' %}
+        <div style="font-size: 16pt; font-family: 'MinionPro', MyriadPro-Regular', 'Open Sans', Helvetica, sans-serif;">
+            {{ content }}
+        </div>
+      {% elsif page.categories contains 'portfolio' %}
+        {{ content }}
         <div class="box alt">
             <div class="row uniform 50%">
                 {% for image in site.static_files %}
