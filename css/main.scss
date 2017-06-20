@@ -110,6 +110,14 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 	}
 
+	#blogwords h1, #blogwords h2, #blogwords h3, #blogwords h4, #blogwords h5, #blogwords h6 {
+		color: _palette(bg);
+	}
+
+	#blogwords img {
+		width: 100%;
+	}
+
 	h2 {
 		font-size: 1.35em;
 		line-height: 1.75em;
@@ -503,15 +511,15 @@ $baseurl: '{{ site.baseurl }}/images';
 		&.style3 {
 			color: _palette(fg-light);
 		}
-        
+
         &.style1:hover {
 			color: _palette(border);
 		}
-        
+
         &.style2:hover {
 			color: _palette(border);
 		}
-        
+
         &.style3:hover {
 			color: _palette(border);
 		}
@@ -977,7 +985,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	.spotlight {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
-        
+
 		.image {
 			@include vendor('order', '1');
 			border-radius: 0;
@@ -1276,7 +1284,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		&.style5 {
 			@include wrapper(accent7);
 		}
-        
+
         &.style6 {
 			@include wrapper(accent8);
             background-color: _palette(fg-light) !important;
@@ -1903,26 +1911,26 @@ $baseurl: '{{ site.baseurl }}/images';
 }
 
 @media screen and (min-width: 737px){
-    
+
         #mobilemenu {
         display: none;
     }
 
 }
 @media screen and (max-width: 736px){
-    
+
     #deskmenu {
         display: none;
     }
-    
+
     #gallery {
         width: 100%;
     }
-    
+
     ul.actions li a {
         max-width: 20em;
     }
-    
+
 }
 
 // Image Overlay
