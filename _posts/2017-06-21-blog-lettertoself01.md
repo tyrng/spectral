@@ -1,9 +1,11 @@
 ---
 layout: post
-#categories - portfolio must have 2 categories - marriage / graduations / events
+#categories - blog / portfolio, portfolio must have 2 categories - marriage / graduations / events
 categories: blog
-#imagename - must be one word, same as 1st word of jpeg
-imagename:
+#image - for SEO (only for blog)
+image: ../../images/blog/post/lettertoself01-01.jpg
+#imagename - must be one word, same as 1st word of jpeg (only for portfolio)
+imagename: 
 title: For What's Coming
 description: and a letter to myself
 ---
