@@ -47,7 +47,7 @@ layout: null
                       </figure>
                       {% else %}
                       <figure>
-                          <img src="{{ site.baseurl | prepend: site.url }}favicon.png" alt=" {{ post.title }} ">
+                          <img src="{{ site.baseurl | prepend: site.url }}/favicon.png" alt=" {{ post.title }} ">
                           <figcaption>{{ post.title }}</figcaption>
                       </figure>
                       {% endif %}
@@ -58,9 +58,9 @@ layout: null
                     {{ post.content | replace: '<figure>', '<figure data-feedback="fb:likes">' }}
                   {% else %}
                     {% if post.categories contains 'blog' %}
-                      {{ post.content | xml_escape }}
+                      {{ post.content}}
                     {% elsif post.categories contains 'portfolio' %}
-                      {{ post.content | xml_escape }}
+                      {{ post.content}}
 
                             {% for image in site.static_files %}
                             {% if image.path contains 'images/portfolio/posts' %}
@@ -71,7 +71,7 @@ layout: null
                             {{ img | truncatewords: 1, "" }}
                             {% endcapture %}
                                 {% if adjustedimg contains post.imagename %}
-                            {% figure %}<img src="{{ image.path }}" alt="image" />{% endfigure %}
+                            {% figure %}<img src="{{ site.baseurl | prepend: site.url }}/{{ image.path }}" alt="image" />{% endfigure %}
                                 {% endif %}
                             {% endif %}
                             {% endfor %}
