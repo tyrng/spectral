@@ -5,7 +5,7 @@ categories: blog
 #image - for SEO (only for blog)
 image: ../../images/blog/post/lettertoself01-01.jpg
 #imagename - must be one word, same as 1st word of jpeg (only for portfolio)
-imagename: 
+imagename:
 title: For What's Coming
 description: and a letter to myself
 ---
@@ -40,7 +40,7 @@ it's nothing, just...
 A Letter To Myself
 =============
 <br>
-![lettertoself01-01](../../images/blog/post/lettertoself01-01.jpg)
+{% figure %}![lettertoself01-01](../../images/blog/post/lettertoself01-01.jpg){% endfigure %}
 
 Dear 18-year-old Tyrone,
 
@@ -54,7 +54,7 @@ And sometimes when you do help people, you ask yourself: Who's going to help me?
 
 But my dear friend, you must know you're a strong one, way stronger than you think, that you must keep up with the positivity. And keep away from the negativity. People do not drain your energy because they intend to, but you let them. It's not their fault.
 
-![lettertoself01-2](../../images/blog/post/lettertoself01-02.jpg)
+{% figure %}![lettertoself01-2](../../images/blog/post/lettertoself01-02.jpg){% endfigure %}
 
 Dear Tyrone,
 
