@@ -14,9 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tyrng.github.io" # the base hostname & protocol for your site
 permalink: /:categories/:title/
 default_bg: sitelogo.png
-owner:
-  name: Tyrone Ong
-  avatar: images/site/me1.jpg
+avatar: images/site/me1.jpg
 
 #------------------Index Content------------------
 #'banner'

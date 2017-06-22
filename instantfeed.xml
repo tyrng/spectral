@@ -11,7 +11,7 @@ layout: null
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}</id>
     <author>
-      <name>{{ site.owner.name }}</name>
+      <name>{{ site.owner }}</name>
     </author>
     {% for post in site.posts limit:10 %}
       <item>
@@ -19,7 +19,7 @@ layout: null
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <author>{{ site.owner.name }}</author>
+        <author>{{ site.owner }}</author>
         {% if post.summaryfeed and post.excerpt %}
           <description>{{ post.excerpt | xml_escape }}</description>
         {% else %}
@@ -45,7 +45,7 @@ layout: null
                       </figure>
                       {% else %}
                       <figure>
-                          <img src="{{ site.baseurl | prepend: site.url }}/images/sitelogo_640x492.png" alt=" {{ post.title }} ">
+                          <img src="{{ site.baseurl | prepend: site.url }}sitelogo.png" alt=" {{ post.title }} ">
                           <figcaption>{{ post.title }}</figcaption>
                       </figure>
                       {% endif %}
