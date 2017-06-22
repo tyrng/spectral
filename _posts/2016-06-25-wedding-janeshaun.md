@@ -3,7 +3,7 @@ layout: post
 #categories - portfolio must have 2 categories - marriage / graduations / events
 categories: portfolio marriage
 #image - for SEO
-image: https://tyrng.github.io/images/portfolio/thumb/marriage/wedding-janeshaun.jpg
+image: portfolio/thumb/marriage/wedding-janeshaun.jpg
 #imagename - must be one word, same as 1st word of jpeg
 imagename: wedding-janeshaun
 title: Shaun & Jane
