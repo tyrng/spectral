@@ -73,9 +73,9 @@ layout: null
                     {% endif %}
                   {% else %}
                   {% if post.categories contains 'blog' %}
-                    {{ post.content | replace: '../..', 'https://tyrng.github.io/images' }}
+                    {{ post.content | replace: '../../images', 'https://tyrng.github.io/images' }}
                   {% elsif post.categories contains 'portfolio' %}
-                    {{ post.content | replace: '../..', 'https://tyrng.github.io/images' }}
+                    {{ post.content | replace: '../../images', 'https://tyrng.github.io/images' }}
                     {% for image in site.static_files %}
                     {% if image.path contains 'images/portfolio/posts' %}
                     {% capture img %}
