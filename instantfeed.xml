@@ -1,0 +1,102 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/instantfeed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}</id>
+    <author>
+      <name>{{ site.owner }}</name>
+    </author>
+    {% for post in site.posts limit:10 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <author>{{ site.owner }}</author>
+        <!-- {% if post.summaryfeed and post.excerpt %}
+          <description>{{ post.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ post.content | xml_escape }}</description>
+        {% endif %} -->
+        <description>{{ post.description | xml_escape }}</description>
+        <content:encoded>
+            <![CDATA[
+                <!doctype html>
+                <html lang="en" prefix="op: http://media.facebook.com/op#">
+              <head>
+                <meta charset="utf-8">
+                <link rel="canonical" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+                <meta property="op:markup_version" content="v1.0">
+              </head>
+              <body>
+                <article>
+                  <header>
+                      <h1>{{ post.title | xml_escape }}</h1>
+                      {% if post.image %}
+                      <figure>
+                          <img src="{{ post.image }}" alt=" {{ post.title }} ">
+                          <figcaption>{{ post.title }}</figcaption>
+                      </figure>
+                      {% else %}
+                      <figure>
+                          <img src="{{ site.baseurl | prepend: site.url }}favicon.png" alt=" {{ post.title }} ">
+                          <figcaption>{{ post.title }}</figcaption>
+                      </figure>
+                      {% endif %}
+                      <time class="op-published" dateTime="{{ post.date | date: "%Y-%m-%d %H:%M:%S %Z" }}">{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</time>
+                      <time class="op-modified" dateTime="{{ post.modified | date: "%Y-%m-%d %H:%M:%S %Z" }}">{{ post.modified }}</time>
+                  </header>
+                  {% if post.instantfeedback %}
+                    {{ post.content | replace: '<figure>', '<figure data-feedback="fb:likes">' }}
+                  {% else %}
+                    {% if post.categories contains 'blog' %}
+                      {{ post.content | xml_escape }}
+                    {% elsif post.categories contains 'portfolio' %}
+                      {{ post.content | xml_escape }}
+                      <div class="box alt">
+                        <div class="row uniform 50%">
+                            {% for image in site.static_files %}
+                            {% if image.path contains 'images/portfolio/posts' %}
+                            {% capture img %}
+                            {{ image.basename }}
+                            {% endcapture %}
+                            {% capture adjustedimg %}
+                            {{ img | truncatewords: 1, "" }}
+                            {% endcapture %}
+                                {% if adjustedimg contains post.imagename %}
+                            <div class="12u"><span class="image fit"><img src="{{ image.path }}" alt="image" /></span></div>
+                                {% endif %}
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                    <footer>
+                        <!-- <aside>Written by Amit Seal Ami, a Lecturer from Institute of Information Technology, University of Dhaka.</aside> -->
+                        <small>&copy; {% assign thisyear = site.time | date: "%Y" %}
+                        {% if site.first_published %}
+                          {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+                          {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+                        {% endif %}
+                        {{ thisyear }}
+                        {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</small>
+                  </footer>
+                </article>
+              </body>
+            </html>
+        ]]>
+        </content:encoded>
+
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

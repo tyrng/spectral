@@ -148,6 +148,7 @@ google-analytics: |
 
 gems:
   - jekyll-seo-tag
+  - "jekyll/figure"
 
 # Build settings
 markdown: kramdown

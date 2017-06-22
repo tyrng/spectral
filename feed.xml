@@ -14,7 +14,30 @@ layout: null
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
+        <description>
+          {% if post.categories contains 'blog' %}
+            {{ post.content | xml_escape }}
+          {% elsif post.categories contains 'portfolio' %}
+            {{ post.content | xml_escape }}
+            <div class="box alt">
+                <div class="row uniform 50%">
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'images/portfolio/posts' %}
+                    {% capture img %}
+                    {{ image.basename }}
+                    {% endcapture %}
+                    {% capture adjustedimg %}
+                    {{ img | truncatewords: 1, "" }}
+                    {% endcapture %}
+                        {% if adjustedimg contains post.imagename %}
+    				        <div class="12u"><span class="image fit"><img src="{{ image.path }}" alt="image" /></span></div>
+                        {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+          {% endif %}
+        </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
