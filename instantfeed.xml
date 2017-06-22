@@ -21,11 +21,6 @@ layout: null
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <author>{{ site.owner }}</author>
-        <!-- {% if post.summaryfeed and post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
-        {% else %}
-          <description>{{ post.content | xml_escape }}</description>
-        {% endif %} -->
         <description>{{ post.description | xml_escape }}</description>
         <content:encoded>
             <![CDATA[
@@ -71,7 +66,7 @@ layout: null
                             {{ img | truncatewords: 1, "" }}
                             {% endcapture %}
                                 {% if adjustedimg contains post.imagename %}
-                            <figure><img src="{{ site.baseurl | prepend: site.url }}/{{ image.path }}" alt="image" /></figure>
+                            <figure><img src="{{ site.baseurl | prepend: site.url }}{{ image.path }}" alt="image" /></figure>
                                 {% endif %}
                             {% endif %}
                             {% endfor %}
@@ -79,7 +74,6 @@ layout: null
                     {% endif %}
                   {% endif %}
                     <footer>
-                        <!-- <aside>Written by Amit Seal Ami, a Lecturer from Institute of Information Technology, University of Dhaka.</aside> -->
                         <small>&copy; {% assign thisyear = site.time | date: "%Y" %}
                         {% if site.first_published %}
                           {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
