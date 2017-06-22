@@ -71,7 +71,7 @@ layout: null
                             {{ img | truncatewords: 1, "" }}
                             {% endcapture %}
                                 {% if adjustedimg contains post.imagename %}
-                            {% figure %}<img src="{{ site.baseurl | prepend: site.url }}/{{ image.path }}" alt="image" />{% endfigure %}
+                            <figure><img src="{{ site.baseurl | prepend: site.url }}/{{ image.path }}" alt="image" /></figure>
                                 {% endif %}
                             {% endif %}
                             {% endfor %}
