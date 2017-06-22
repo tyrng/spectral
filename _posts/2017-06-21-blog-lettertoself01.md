@@ -3,7 +3,7 @@ layout: post
 #categories - blog / portfolio, portfolio must have 2 categories - marriage / graduations / events
 categories: blog
 #image - for SEO (only for blog)
-image: ../../images/blog/post/lettertoself01-01.jpg
+image: https://tyrng.github.io/images/blog/post/lettertoself01-01.jpg
 #imagename - must be one word, same as 1st word of jpeg (only for portfolio)
 imagename:
 title: For What's Coming
@@ -39,8 +39,7 @@ it's nothing, just...
 
 A Letter To Myself
 =============
-<br>
-<figure><div class="12u"><span class="image fit"><img src="https://tyrng.github.io/images/blog/post/lettertoself01-01.jpg" alt="image" /></span></div></figure>
+<figure><br><div class="12u"><span class="image fit"><img src="https://tyrng.github.io/images/blog/post/lettertoself01-01.jpg" alt="image" /></span></div></figure>
 
 Dear 18-year-old Tyrone,
 
