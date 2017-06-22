@@ -92,11 +92,6 @@ layout: null
                   {% endif %}
                   {% endif %}
                     <footer>
-                        <aside>
-                            {% if post.credit %}
-                              {{ post.credit }}.<br />
-                            {% endif %}
-                            </aside>
                         <small>&copy; {% assign thisyear = site.time | date: "%Y" %}
                         {% if site.first_published %}
                           {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
