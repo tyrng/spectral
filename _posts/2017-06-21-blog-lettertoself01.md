@@ -40,7 +40,7 @@ it's nothing, just...
 A Letter To Myself
 =============
 <br>
-<figure><div class="12u"><span class="image fit"><img src="../../images/blog/post/lettertoself01-01.jpg" alt="image" /></span></div></figure>
+<figure><div class="12u"><span class="image fit"><img src="https://tyrng.github.io/images/blog/post/lettertoself01-01.jpg" alt="image" /></span></div></figure>
 
 Dear 18-year-old Tyrone,
 
@@ -54,7 +54,7 @@ And sometimes when you do help people, you ask yourself: Who's going to help me?
 
 But my dear friend, you must know you're a strong one, way stronger than you think, that you must keep up with the positivity. And keep away from the negativity. People do not drain your energy because they intend to, but you let them. It's not their fault.
 
-<figure><figure><div class="12u"><span class="image fit"><img src="../../images/blog/post/lettertoself01-02.jpg" alt="image" /></span></div></figure></figure>
+<figure><div class="12u"><span class="image fit"><img src="https://tyrng.github.io/images/blog/post/lettertoself01-02.jpg" alt="image" /></span></div></figure>
 
 Dear Tyrone,
 
