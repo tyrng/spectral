@@ -3,7 +3,7 @@ layout: post
 #categories - portfolio must have 2 categories - marriage / graduations / events
 categories: portfolio events
 #image - for SEO
-image: portfolio/thumb/events/event-annualcamp.jpg
+image: /images/portfolio/thumb/events/event-annualcamp.jpg
 #imagename - must be one word, same as 1st word of jpeg
 imagename: event-annualcamp
 title: Annual Camp of SJAMSABS
