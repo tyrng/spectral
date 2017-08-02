@@ -15,7 +15,9 @@ layout: default
             {{ content }}
         </div>
       {% elsif page.categories contains 'portfolio' %}
-        {{ content }}
+        <div id="pfwords">
+            {{ content }}
+        </div>
         <div class="box alt">
             <div class="row uniform 50%">
                 {% for image in site.static_files %}

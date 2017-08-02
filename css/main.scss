@@ -114,6 +114,10 @@ $baseurl: '{{ site.baseurl }}/images';
 		color: _palette(bg);
 	}
 
+	#pfwords h1, #pfwords h2, #pfwords h3, #pfwords h4, #pfwords h5, #pfwords h6 {
+		color: _palette(bg);
+	}
+
 	#blogwords img {
 		width: 100%;
 	}
