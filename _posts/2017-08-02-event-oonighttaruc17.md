@@ -3,7 +3,7 @@ layout: post
 #categories - portfolio must have 2 categories - marriage / graduations / events
 categories: portfolio events
 #image - for SEO
-image: /images/portfolio/thumb/events/event-tedxtaruc16.jpg
+image: /images/portfolio/thumb/events/event-oonighttaruc17.jpg
 #imagename - must be one word, same as 1st word of jpeg
 imagename: event-oonighttaruc17
 title: Orientation Odyssey Night 2017
