@@ -1,0 +1,26 @@
+---
+layout: page
+title: Personal
+tags: personal
+description: photographs that feed me
+---
+<div id="pfwords">
+    {{ site.personalwords }}
+</div>
+        <div class="box alt">
+            <div class="row uniform 50%">
+                {% for image in site.static_files reversed %}
+                {% if image.path contains 'images/personal' %}
+                {% capture img %}
+                {{ image.basename }}
+                {% endcapture %}
+                {% capture adjustedimg %}
+                {{ img | truncatewords: 1, "" }}
+                {% endcapture %}
+                    {% if adjustedimg contains 'personal' %}
+				        <div class="12u"><span class="image fit"><img src="{{ site.baseurl | prepend: site.url }}{{ image.path }}" alt="image" /></span></div>
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>

@@ -8,7 +8,7 @@
                 <div id="menu">
                     <ul>
                         <li><a href="{{ site.url | prepend: site.baseurl }}">Home</a></li>
-                        
+
                         {% for my_page in site.pages %} {% if my_page.title contains 'Portfolio' %}
                         <li id="deskmenu" class="dropdown">
                                 <a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a>
@@ -22,17 +22,17 @@
                                     {% for my_page in site.pages %} {% if my_page.tags contains 'events' %}
                                     <a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a>
                                     {% endif %} {% endfor %}
-                                    
+
                                 </div>
                         </li>
                         {% endif %} {% endfor %}
-                        
-                        
+
+
                         <!-- FOR MOBILE ONLY -->
                         {% for my_page in site.pages %} {% if my_page.title contains 'Portfolio' %}
                         <li id="mobilemenu"><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a></li>
                         {% endif %} {% endfor %}
-                        
+
                         {% for my_page in site.pages %} {% if my_page.tags contains 'marriage' %}
                         <li id="mobilemenu"><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn"> - {{ my_page.title }}</a></li>
                         {% endif %} {% endfor %}
@@ -42,17 +42,20 @@
                         {% for my_page in site.pages %} {% if my_page.tags contains 'events' %}
                         <li id="mobilemenu"><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn"> - {{ my_page.title }}</a></li>
                         {% endif %} {% endfor %}
-                        
-                        
+
+                        {% for my_page in site.pages %} {% if my_page.tags contains 'personal' %}
+                        <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a></li>
+                        {% endif %} {% endfor %}
+
                         {% for my_page in site.pages %} {% if my_page.title contains 'Blog' %}
                         <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a></li>
                         {% endif %} {% endfor %}
-                        
+
                         {% for my_page in site.pages %} {% if my_page.title contains 'About Me' %}
                         <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a></li>
                         {% endif %} {% endfor %}
-                        
-                        
+
+
                         <li><a href="{{ " /feed.xml " | prepend: site.baseurl }}" class="icon fa-feed"> RSS Feed</a></li>
                     </ul>
                 </div>
