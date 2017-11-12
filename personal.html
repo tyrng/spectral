@@ -18,7 +18,10 @@ description: photographs that feed me
                 {{ img | truncatewords: 1, "" }}
                 {% endcapture %}
                     {% if adjustedimg contains 'personal' %}
-				        <div class="12u"><span class="image fit"><img src="{{ site.baseurl | prepend: site.url }}{{ image.path }}" alt="image" /></span></div>
+                      <span id="personal{% increment counter %}"></span>
+                      {% if counter <= 100 %}
+				                <div class="12u"><span class="image fit"><img src="{{ site.baseurl | prepend: site.url }}{{ image.path }}" alt="image" /></span></div>
+                      {% endif %}
                     {% endif %}
                 {% endif %}
                 {% endfor %}
