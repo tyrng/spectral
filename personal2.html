@@ -1,0 +1,38 @@
+---
+layout: page
+title: Personal
+tags: personal
+description: photographs that feed me
+---
+<div id="pfwords">
+    {{ site.personalwords }}
+</div>
+        <div class="box alt">
+            <div class="row uniform 50%">
+                {% for image in site.static_files reversed %}
+                {% if image.path contains 'images/personal' %}
+                {% capture img %}
+                {{ image.basename }}
+                {% endcapture %}
+                {% capture adjustedimg %}
+                {{ img | truncatewords: 1, "" }}
+                {% endcapture %}
+                    {% if adjustedimg contains 'personal' %}
+                      <span id="personal{% increment counter2 %}" style="display:none"></span>
+                      {% if counter2 == 101 %}
+                      <div style="font-size: 14pt; font-family: 'Muli', 'Open Sans', Helvetica, sans-serif; float:left" id="blogwords" style="margin: auto">
+                        <a href="{{ site.url | prepend: site.baseurl }}/personal1/" >Previous</a>
+                      </div>
+                      <div class="12u"><span class="image fit"><img src="{{ site.baseurl | prepend: site.url }}{{ image.path }}" alt="image" /></span></div>
+                      {% elsif counter2 > 101 and counter2 <= 200 %}
+				                <div class="12u"><span class="image fit"><img src="{{ site.baseurl | prepend: site.url }}{{ image.path }}" alt="image" /></span></div>
+                      {% elsif  counter2 == 201 %}
+                        <div style="font-size: 14pt; font-family: 'Muli', 'Open Sans', Helvetica, sans-serif; float: right" id="blogwords" style="margin: auto">
+                          <a href="{{ site.url | prepend: site.baseurl }}/personal3/" >Next</a>
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>

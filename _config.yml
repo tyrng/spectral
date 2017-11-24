@@ -6,7 +6,7 @@ title: Tyrone Anthony
 subtitle: |
   Photographer<br>
   Documenting timeframes
-description: Freelance event photographer based in Malaysia.
+description: Lifestyle photographer based in Malaysia.
 owner: Tyrone Ong # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
 email: ongtypc@gmail.com
@@ -24,7 +24,7 @@ scrollbutton: Learn More
 
 #Wrapper 'one'
 header: |
-  Freelance event photographer<br>based in Malaysia
+  Lifestyle photographer<br>based in Malaysia
 subheader: |
   I shoot weddings, graduations, and all other sorts of events.
 #subheader2: |
@@ -151,7 +151,7 @@ google-analytics: |
   ga('create', 'UA-67534177-2', 'auto');
   ga('send', 'pageview');
 
-gems:
+plugins:
   - jekyll-seo-tag
   - "jekyll/figure"
 

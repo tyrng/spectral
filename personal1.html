@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Personal
-tags: personal
+tags: personal1
 description: photographs that feed me
 ---
 <div id="pfwords">
@@ -18,9 +18,13 @@ description: photographs that feed me
                 {{ img | truncatewords: 1, "" }}
                 {% endcapture %}
                     {% if adjustedimg contains 'personal' %}
-                      <span id="personal{% increment counter %}"></span>
+                      <span id="personal{% increment counter %}" style="display: none"></span>
                       {% if counter <= 100 %}
 				                <div class="12u"><span class="image fit"><img src="{{ site.baseurl | prepend: site.url }}{{ image.path }}" alt="image" /></span></div>
+                      {% elsif  counter == 101 %}
+                        <div style="font-size: 14pt; font-family: 'Muli', 'Open Sans', Helvetica, sans-serif; float: right" id="blogwords" style="margin: auto">
+                          <a href="{{ site.url | prepend: site.baseurl }}/personal2/" >Next</a>
+                        </div>
                       {% endif %}
                     {% endif %}
                 {% endif %}
