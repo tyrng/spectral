@@ -31,7 +31,7 @@ subheader: |
 #  Meanwhile, I shoot other genres of photography as a hobby.<br>I also write and curate music.
 icon1link: portfolio/
 icon1label: Photographing
-icon2link: blog/
+#icon2link: blog/
 icon2label: Blogging
 icon3link: https://open.spotify.com/user/1277814824
 icon3label: Music Curating
