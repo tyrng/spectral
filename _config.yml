@@ -163,8 +163,8 @@ markdown: kramdown
 
 #-----------------SEO-----
 #author: tyrone0ng
-twitter:
-  username: tyrone0ng
+# twitter:
+  # username: tyrone0ng
 
 facebook:
  app_id: 1483358635064207
