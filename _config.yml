@@ -109,7 +109,7 @@ social:
   #google-plus-square: https://plus.google.com/u/0/+<username>
   #email: /contact/
   #flickr:
-  instagram: https://instagram.com/tyrone0ng/
+  instagram: https://www.instagram.com/tyroneanthony_/
   #youtube-square:
   spotify: https://open.spotify.com/user/1277814824
   #stack-overflow:
@@ -163,8 +163,8 @@ markdown: kramdown
 
 #-----------------SEO-----
 #author: tyrone0ng
-# twitter:
-  # username: tyrone0ng
+twitter:
+  username: tyrone0ng
 
 facebook:
  app_id: 1483358635064207
