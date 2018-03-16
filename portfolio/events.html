@@ -11,9 +11,13 @@ description: everything else
     {% for posts in category %}
         {% for post in posts %}
             {% if post.url and post.categories.last contains 'events' %}
-            
-				
-				    <div class="6u" id="gallery" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+              {% if thecycle == 'odd' %}
+                <div class="6u" id="gallery" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+              {% elsif thecycle == 'even' %}
+				        <div class="6u" id="gallery" style="padding-left: 5%; padding-right: 4.8%; padding-bottom: 5%">
+              {% endif %}
                         <div class="image fit container">
                             <img src="{{ "/images/portfolio/thumb/events/" | append: post.imagename | append: ".jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" /><h4>{{ post.title }}</h4>
                             <a href="{{ post.url }}" class="overlay">
@@ -21,8 +25,8 @@ description: everything else
                             </a>
                         </div>
                     </div>
-                
-            
+
+
             {% endif %}
         {% endfor %}
     {% endfor %}
