@@ -11,6 +11,6 @@ description: Wedding Actual Day
 ---
 <b>Photography by: </b>Jessielyee. & Tyrone Anthony<br>
 <b>Cinematography by: </b>JMS Wedding Photography<br>
-<b>Gown: </b>Alexis Bridal<br>
-<b>Make Up Artist: </b>Shiro Yang<br>
-<b>Deco: </b>RandomBeanMY<br>
+<b>Gown: </b>Renthegown Gallery<br>
+<b>Make Up Artist: </b>Shiroy.Makeup.Hairdo<br>
+<b>Deco: </b>RandomBean<br>
